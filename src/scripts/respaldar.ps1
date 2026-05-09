@@ -1,5 +1,6 @@
 # ============================================================
 # RESPALDAR — SaDiT
+# Copyright (c) 2026 jupagoma235 — MIT License
 # ============================================================
 # Exporta la BD, sincroniza el vault y guarda metadatos.
 # Auto-elevación UAC si no es administrador.

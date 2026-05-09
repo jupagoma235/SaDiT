@@ -1,5 +1,6 @@
 # ============================================================
 # RESTAURAR — SaDiT
+# Copyright (c) 2026 jupagoma235 — MIT License
 # ============================================================
 # Restaura vault y BD desde un backup previo.
 # Auto-elevación UAC si no es administrador.

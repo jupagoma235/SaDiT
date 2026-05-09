@@ -1,5 +1,6 @@
 # ============================================================
 # PROGRAMAR BACKUP — SaDiT
+# Copyright (c) 2026 jupagoma235 — MIT License
 # ============================================================
 # Crea una tarea programada semanal para ejecutar el backup.
 # Auto-elevación UAC si no es administrador.

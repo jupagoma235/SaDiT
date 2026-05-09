@@ -78,4 +78,6 @@ SaDiT/
 
 ## Licencia
 
-MIT
+MIT License — Copyright (c) 2026 jupagoma235
+
+Ver archivo [LICENSE](LICENSE) para más detalles.

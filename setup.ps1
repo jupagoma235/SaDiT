@@ -1,5 +1,6 @@
 # ============================================================
 # INSTALADOR DE SaDiT
+# Copyright (c) 2026 jupagoma235 — MIT License
 # ============================================================
 # Configura todo desde 0 en una PC nueva:
 #   1. Verifica/instala dependencias

@@ -1,5 +1,6 @@
 # ============================================================
 # INICIAR SESIÓN — SaDiT
+# Copyright (c) 2026 jupagoma235 — MIT License
 # ============================================================
 # Prepara el entorno, crea una sesión en la BD y genera
 # el prompt de contexto para el agente IA.
