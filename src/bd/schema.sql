@@ -66,6 +66,33 @@ CREATE TABLE IF NOT EXISTS contexto_activo (
 );
 
 -- Índices para búsquedas rápidas
+-- ============================================================
+-- TABLA DE ERRORES — SaDiT
+-- ============================================================
+-- Cada error se cataloga con categoría y severidad.
+-- Cuando un error se repite o es crítico, genera un aprendizaje
+-- para que el sistema no lo repita.
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS errores (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sesion_id INTEGER REFERENCES sesiones(id),
+    proyecto TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    categoria TEXT NOT NULL CHECK(categoria IN ('logica','recursos','referencias','conexiones','general')),
+    severidad INTEGER NOT NULL CHECK(severidad BETWEEN 1 AND 5),
+    modulo TEXT,
+    mensaje TEXT NOT NULL,
+    detalle TEXT,
+    resuelto BOOLEAN DEFAULT 0,
+    aprendizaje_id INTEGER REFERENCES aprendizajes(id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_errores_categoria ON errores(categoria);
+CREATE INDEX IF NOT EXISTS idx_errores_severidad ON errores(severidad DESC);
+CREATE INDEX IF NOT EXISTS idx_errores_resuelto ON errores(resuelto);
+
+-- Índices generales
 CREATE INDEX IF NOT EXISTS idx_aprendizajes_categoria ON aprendizajes(categoria);
 CREATE INDEX IF NOT EXISTS idx_aprendizajes_peso ON aprendizajes(peso DESC);
 CREATE INDEX IF NOT EXISTS idx_logs_sesion ON logs_conversacion(sesion_id);
