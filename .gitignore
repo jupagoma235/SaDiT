@@ -1,0 +1,36 @@
+# === Sistema ===
+*.log
+*.tmp
+__pycache__/
+.venv/
+node_modules/
+
+# === Entorno local (generado por setup) ===
+/config/config.local.ps1
+/config/config.local.json
+
+# === Base de datos (generada por setup) ===
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# === Vault local (generado por setup) ===
+/src/vault/memoria_openmode.db
+/src/vault/_config-pc.md
+/src/vault/_ultimo-prompt.txt
+/src/vault/PulseGuard/
+/src/vault/Windows/
+
+# === IDE ===
+.obsidian/
+*.obsidian
+workspace.json
+app.json
+appearance.json
+core-plugins.json
+graph.json
+
+# === Backup ===
+/backup/
+/D:/RECUPERARENTORNOIALOCAL/

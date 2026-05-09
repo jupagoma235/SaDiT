@@ -1,0 +1,19 @@
+# ============================================================
+# CONFIGURACIÓN DE SaDiT
+# ============================================================
+# Este archivo es generado por setup.ps1.
+# NO subir a git después de personalizar.
+# ============================================================
+
+# --- Rutas del Vault ---
+$global:SaDiT_VaultPath = "$env:USERPROFILE\SaDiTVault"
+$global:SaDiT_BackupPath = "D:\SaDiT_Backup"
+
+# --- Proyecto activo ---
+$global:SaDiT_ProyectoActivo = "MiProyecto"
+$global:SaDiT_ProyectoRuta = "$env:USERPROFILE\source\MiProyecto"
+
+# --- Preferencias ---
+$global:SaDiT_Idioma = "es-ES"
+$global:SaDiT_ZonaHoraria = "UTC-5"
+$global:SaDiT_ModeloOllama = "qwen2.5-coder:7b"
